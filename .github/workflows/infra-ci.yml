@@ -37,6 +37,6 @@ jobs:
         with:
           inlineScript: |
             $deploymentName = date +”%d-%b-%Y.%H:%M:%S”
-            az deployment group create --resource-group app-insight-export --template-file ./arm/out/azuredeploy.json --mode complete -name $deploymentName
+            az deployment group create --resource-group app-insight-export --template-file ./arm/out/azuredeploy.json --mode complete --name $deploymentName
 
 
