@@ -7,7 +7,7 @@
     {
       "type": "Microsoft.Storage/storageAccounts",
       "apiVersion": "2019-04-01",
-      "name": "appindevstrgfuncusc",
+      "name": "appindevstrgusc",
       "location": "centralus",
       "sku": {
         "name": "Standard_LRS"
@@ -36,6 +36,18 @@
       },
       "metadata": {
         "exceptionGuid1": ""
+      }
+    },
+    {
+      "type": "microsoft.insights/components",
+      "apiVersion": "2015-05-01",
+      "name": "appin-dev-appin-usc",
+      "location": "centralus",
+      "kind": "web",
+      "properties": {
+        "Application_Type": "web",
+        "Flow_Type": "Redfield",
+        "Request_Source": "IbizaAIExtension"
       }
     },
     {
