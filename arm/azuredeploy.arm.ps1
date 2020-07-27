@@ -24,8 +24,7 @@ function Get-Template {
         -ApplicationCode $applicationCode `
         -EnvironmentName $environmentName `
         -Location "centralus" `
-        -StorageAccessTier "Standard_LRS" `
-        -UniqueNamePhrase "func"
+        -StorageAccessTier "Standard_LRS" 
     $baseTemplate.resources += $funcStorageAccount
 
 
