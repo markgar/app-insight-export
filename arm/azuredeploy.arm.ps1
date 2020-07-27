@@ -27,6 +27,11 @@ function Get-Template {
         -StorageAccessTier "Standard_LRS" 
     $baseTemplate.resources += $funcStorageAccount
 
+    $appInsights = Get-SpqAppInsights `
+        -ApplicationCode $applicationCode `
+        -EnvironmentName $environmentName `
+        -Location "centralus"
+    $baseTemplate.resources += $appInsights
 
     $frontEndASP = Get-SpqAppServicePlan `
         -ApplicationCode $applicationCode `
